@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Engineering Student Information</title>
+    <style>
+        body {
+            font-family: Verdana;
+            color: maroon;
+            background-color: aliceblue;
+        }
+
+        input {
+            font-family: Verdana;
+            width: "1in";
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Engineering Student Information</h2>
+
+    <form action="backend.php" method="post">
+        <table>
+            <tr>
+                <td style="text-align:right">Name</td>
+                <td><input type="text" size="10" name="name" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:right">Student Code</td>
+                <td><input type="text" size="10" name="s_code" /></td>
+            </tr>
+        </table>
+
+
+        <p>Rank
+            <select name="rank">
+                <option value="1-100">1-100</option>
+                <option value="101-1000">101-1000</option>
+                <option value="1001-10000">1001-10000</option>
+                <option value="Over 10000">Over 10000</option>
+                <option selected value="Unknown">NA</option>
+            </select>
+        </p>
+
+        <p><input type="checkbox" name="student" value="yes" checked />Full time student?</p>
+
+        <p>
+            Interested Universities:<br />
+            <textarea rows="8" cols="35" name="comments"></tExtarea>
+        </p>
+
+        <input type="submit" value="Submit Data" />
+    </form>
+
+</body>
+
+</html>
